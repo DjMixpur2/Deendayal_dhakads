@@ -27,7 +27,7 @@ class script(object):
 ▫ 𝟸𝟺x𝟽 sᴇʀᴠɪᴄᴇs ᴀᴠᴀɪʟᴀʙʟᴇ.</b>"""
 
     
-    STATUS_TXT = """<b>╭────[ @SHBackup ]────⍟
+    STATUS_TXT = """<b>╭────[ @KRBackup ]────⍟
 ├⍟ Tᴏᴛᴀʟ Fɪʟᴇs : <code>{}</code>
 ├⍟ Tᴏᴛᴀʟ Usᴇʀs : <code>{}</code>
 ├⍟ Tᴏᴛᴀʟ Cʜᴀᴛs : <code>{}</code>
@@ -249,7 +249,7 @@ Nᴀᴍᴇ : {}
 
 Mᴇꜱꜱᴀɢᴇ : <b>{}</b>"""
     
-    CAPTION = """<b><a href="https://t.me/Deendayal_dhakad">{file_caption}</a></b>\n\n<b>⚜️ Powered By : <a href=https://t.me/Deendayal_dhakad>[Deendayal_Dhakad]</a></b>"""
+    CAPTION = """<b>{file_name}</b>\n\n<b>⚜️ Powered By : <a href=https://t.me/krbackup>[KRBackup]</a></b>"""
 
     IMDB_TEMPLATE_TXT = """
 <b>🏷 Title</b>: <a href={url}>{title}</a>
