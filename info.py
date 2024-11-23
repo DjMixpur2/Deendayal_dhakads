@@ -13,8 +13,8 @@ def is_enabled(value, default):
 
 # Bot information
 SESSION = environ.get('SESSION', 'Media_search')
-API_ID = int(environ.get('API_ID', '12850056'))
-API_HASH = environ.get('API_HASH', '15564ec4a1a2cbef87c99a9aa9e40b34')
+API_ID = int(environ.get('API_ID', ''))
+API_HASH = environ.get('API_HASH', '')
 BOT_TOKEN = environ.get('BOT_TOKEN', "")
 
 # Bot settings
@@ -33,7 +33,7 @@ CODE = (environ.get('CODE', 'https://i.postimg.cc/1RfCPqC4/IMG-20241117-154306-5
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '770434685').split()]
 CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1002260661088').split()] #Channel id for auto indexing ( make sure bot is admin )
 LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1001933509863')) #Log channel id ( make sure bot is admin )
-DEENDAYAL_MOVIE_UPDATE_CHANNEL = int(environ.get('DEENDAYAL_MOVIE_UPDATE_CHANNEL', '-1002260661088')) #Notification of those who verify will be sent to your channel. Enter the ID of the channel you want to send notification to here.
+DEENDAYAL_MOVIE_UPDATE_CHANNEL = int(environ.get('DEENDAYAL_MOVIE_UPDATE_CHANNEL', '')) #Notification of those who verify will be sent to your channel. Enter the ID of the channel you want to send notification to here.
 PREMIUM_LOGS = int(environ.get('PREMIUM_LOGS', '-1001933509863')) # add premium logs channel id
 auth_channel = environ.get('AUTH_CHANNEL', '') #Channel / Group Id for force sub ( make sure bot is admin )
 DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in environ.get('DELETE_CHANNELS', '-1002474691060').split()]
@@ -42,8 +42,8 @@ reqst_channel = environ.get('REQST_CHANNEL_ID', '-1001933509863') # request chan
 
 
 # MongoDB information
-DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://djmixpur:djmixpur@cluster0.vywou.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
-DATABASE_NAME = environ.get('DATABASE_NAME', "Cluster0")
+DATABASE_URI = environ.get('DATABASE_URI', "")
+DATABASE_NAME = environ.get('DATABASE_NAME', "")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Deendayal_files')
 
 # index movie Notification & update channel 
