@@ -275,7 +275,7 @@ async def start(client, message):
                                 InlineKeyboardButton('', callback_data=f'generate_stream_link:{file_id}'),
                             ],
                             [
-                                InlineKeyboardButton('📌 ᴊᴏɪɴ ᴜᴘᴅᴀᴛᴇꜱ ᴄʜᴀɴɴᴇʟ 📌', url=f'https://t.me/shbackup') #Don't change anything without contacting me @LazyDeveloperr
+                                InlineKeyboardButton('📌 ᴊᴏɪɴ ᴜᴘᴅᴀᴛᴇꜱ ᴄʜᴀɴɴᴇʟ 📌', url=f'https://t.me/krbackup') #Don't change anything without contacting me @LazyDeveloperr
                             ]
                         ]
                     )
@@ -294,7 +294,7 @@ async def start(client, message):
                                 InlineKeyboardButton('', callback_data=f'generate_stream_link:{file_id}'),
                             ],
                             [
-                                InlineKeyboardButton('📌 ᴊᴏɪɴ ᴜᴘᴅᴀᴛᴇꜱ ᴄʜᴀɴɴᴇʟ 📌', url=f'https://t.me/shbackup') #Don't change anything without contacting me @LazyDeveloperr
+                                InlineKeyboardButton('📌 ᴊᴏɪɴ ᴜᴘᴅᴀᴛᴇꜱ ᴄʜᴀɴɴᴇʟ 📌', url=f'https://t.me/krbackup') #Don't change anything without contacting me @LazyDeveloperr
                             ]
                         ]
                     )
@@ -365,7 +365,7 @@ async def start(client, message):
             btn = [[
                 InlineKeyboardButton("Cʟɪᴄᴋ Hᴇʀᴇ Tᴏ Gᴇᴛ Fɪʟᴇ..🍁", url=f"https://telegram.me/{temp.U_NAME}?start=files_{fileid}")
             ],[
-                InlineKeyboardButton("🏃..Bᴀᴄᴋ Tᴏ Gʀᴏᴜᴘ", url="https://t.me/shmoviegroup")
+                InlineKeyboardButton("🏃..Bᴀᴄᴋ Tᴏ Gʀᴏᴜᴘ", url="https://t.me/kdmovirequest")
             ]]
             await message.reply_photo(
                 photo="https://graph.org/file/6928de1539e2e80e47fb8.jpg",
@@ -501,7 +501,7 @@ async def start(client, message):
               InlineKeyboardButton('', callback_data=f'generate_stream_link:{file_id}'),
              ],
              [
-              InlineKeyboardButton('📌 ᴊᴏɪɴ ᴜᴘᴅᴀᴛᴇꜱ ᴄʜᴀɴɴᴇʟ 📌', url=f'https://t.me/shbackup') #Don't change anything without contacting me @LazyDeveloperr
+              InlineKeyboardButton('📌 ᴊᴏɪɴ ᴜᴘᴅᴀᴛᴇꜱ ᴄʜᴀɴɴᴇʟ 📌', url=f'https://t.me/krbackup') #Don't change anything without contacting me @LazyDeveloperr
              ]
             ]
         )
@@ -650,7 +650,7 @@ async def start(client, message):
               InlineKeyboardButton('', callback_data=f'generate_stream_link:{file_id}'),
              ],
              [
-              InlineKeyboardButton('📌 ᴊᴏɪɴ ᴜᴘᴅᴀᴛᴇꜱ ᴄʜᴀɴɴᴇʟ 📌', url=f'https://t.me/shbackup') #Don't change anything without contacting me https://t.me/Sorry_Sorry_Galti_Ho_Gai
+              InlineKeyboardButton('📌 ᴊᴏɪɴ ᴜᴘᴅᴀᴛᴇꜱ ᴄʜᴀɴɴᴇʟ 📌', url=f'https://t.me/krbackup') #Don't change anything without contacting me https://t.me/Sorry_Sorry_Galti_Ho_Gai
              ]
             ]
         )
