@@ -32,7 +32,7 @@ async def start(client, message):
     await message.react(emoji=random.choice(REACTIONS), big=True) 
     if message.chat.type in [enums.ChatType.GROUP, enums.ChatType.SUPERGROUP]:
         buttons = [[
-                    InlineKeyboardButton('❤️ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ❤️', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+                    InlineKeyboardButton('', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
                 ],[
                     InlineKeyboardButton('🍁 Update Channel 🍁', url=CHNL_LNK)
                   ]]
@@ -49,19 +49,19 @@ async def start(client, message):
         await client.send_message(LOG_CHANNEL, script.LOG_TEXT_P.format(message.from_user.id, message.from_user.mention))
     if len(message.command) != 2:
         buttons = [[
-                    #InlineKeyboardButton('🔰 ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ 🔰', url=f'http://telegram.me/{temp.U_NAME}?startgroup=true')
-                    InlineKeyboardButton('⚜️ Rᴇғᴇʀ & Gᴇᴛ Pʀᴇᴍɪᴜᴍ ⚜️', callback_data='reffff')
+                    #InlineKeyboardButton('', url=f'http://telegram.me/{temp.U_NAME}?startgroup=true')
+                    InlineKeyboardButton('', callback_data='reffff')
                 ],[
-                    InlineKeyboardButton('🌳 Tᴏᴘ Sᴇᴀʀᴄʜɪɴɢ', callback_data="topsearch"),
-                    InlineKeyboardButton('⚜️ sᴜᴘᴘᴏʀᴛ', callback_data='channels')
+                    InlineKeyboardButton('', callback_data="topsearch"),
+                    InlineKeyboardButton('', callback_data='channels')
                 ],[
-                    InlineKeyboardButton('🦧 ʜᴇʟᴘ', callback_data='help'),
-                    InlineKeyboardButton('❤️ ᴀʙᴏᴜᴛ ', callback_data='about')
+                    InlineKeyboardButton('', callback_data='help'),
+                    InlineKeyboardButton('', callback_data='about')
                 ],[
-                    InlineKeyboardButton('Dᴏɴᴀᴛɪᴏɴ 🎉', callback_data='donation'),
-                    InlineKeyboardButton('Eᴀʀɴ ᴍᴏɴᴇʏ..🍁', callback_data="shortlink_info")
+                    InlineKeyboardButton('', callback_data='donation'),
+                    InlineKeyboardButton('', callback_data="shortlink_info")
                 ],[
-                    InlineKeyboardButton('✨ ʙᴜʏ ꜱᴜʙꜱᴄʀɪᴘᴛɪᴏɴ : ʀᴇᴍᴏᴠᴇ ᴀᴅꜱ ✨', callback_data="premium_info")
+                    InlineKeyboardButton('', callback_data="premium_info")
                   ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         current_time = datetime.now(pytz.timezone(TIMEZONE))
@@ -74,7 +74,7 @@ async def start(client, message):
             gtxt = "ɢᴏᴏᴅ ᴇᴠᴇɴɪɴɢ 👋"
         else:
             gtxt = "ɢᴏᴏᴅ ɴɪɢʜᴛ 👋"
-        m=await message.reply_text("<i>ᴡᴇʟᴄᴏᴍᴇ ᴛᴏ <b>SH Movie Search Bot</b>.\nʜᴏᴘᴇ ʏᴏᴜ'ʀᴇ ᴅᴏɪɴɢ ᴡᴇʟʟ...</i>")
+        m=await message.reply_text("<i>ᴡᴇʟᴄᴏᴍᴇ ᴛᴏ <b>KR Movie Search Bot</b>.\nʜᴏᴘᴇ ʏᴏᴜ'ʀᴇ ᴅᴏɪɴɢ ᴡᴇʟʟ...</i>")
         await asyncio.sleep(0.4)
         await m.edit_text("⏳")
         await asyncio.sleep(0.5)
@@ -126,19 +126,19 @@ async def start(client, message):
         return
     if len(message.command) == 2 and message.command[1] in ["subscribe", "error", "okay", "help"]:
         buttons = [[
-                    #InlineKeyboardButton('🔰 ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ 🔰', url=f'http://telegram.me/{temp.U_NAME}?startgroup=true')
-                    InlineKeyboardButton('⚜️ Rᴇғᴇʀ & Gᴇᴛ Pʀᴇᴍɪᴜᴍ ⚜️', callback_data='reffff')
+                    #InlineKeyboardButton('', url=f'http://telegram.me/{temp.U_NAME}?startgroup=true')
+                    InlineKeyboardButton('', callback_data='reffff')
                 ],[
-                    InlineKeyboardButton('🌳 Tᴏᴘ Sᴇᴀʀᴄʜɪɴɢ', callback_data="topsearch"),
-                    InlineKeyboardButton('⚜️ sᴜᴘᴘᴏʀᴛ ', callback_data='channels')
+                    InlineKeyboardButton('', callback_data="topsearch"),
+                    InlineKeyboardButton('', callback_data='channels')
                 ],[
-                    InlineKeyboardButton('🦧 ʜᴇʟᴘ ', callback_data='help'),
-                    InlineKeyboardButton('❤️ ᴀʙᴏᴜᴛ ', callback_data='about')
+                    InlineKeyboardButton('', callback_data='help'),
+                    InlineKeyboardButton('', callback_data='about')
                 ],[
-                    InlineKeyboardButton('Dᴏɴᴀᴛɪᴏɴ 🎉', callback_data='donation'),
-                    InlineKeyboardButton('Eᴀʀɴ ᴍᴏɴᴇʏ..🍁', callback_data="shortlink_info")
+                    InlineKeyboardButton('', callback_data='donation'),
+                    InlineKeyboardButton('', callback_data="shortlink_info")
                 ],[
-                    InlineKeyboardButton('✨ ʙᴜʏ ꜱᴜʙꜱᴄʀɪᴘᴛɪᴏɴ : ʀᴇᴍᴏᴠᴇ ᴀᴅꜱ ✨', callback_data="premium_info")
+                    InlineKeyboardButton('', callback_data="premium_info")
                   ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         current_time = datetime.now(pytz.timezone(TIMEZONE))
@@ -151,7 +151,7 @@ async def start(client, message):
             gtxt = "ɢᴏᴏᴅ ᴇᴠᴇɴɪɴɢ 👋"
         else:
             gtxt = "ɢᴏᴏᴅ ɴɪɢʜᴛ 👋"
-        m=await message.reply_text("<i>ᴡᴇʟᴄᴏᴍᴇ ᴛᴏ <b>SH Movie Search Bot</b>.\nʜᴏᴘᴇ ʏᴏᴜ'ʀᴇ ᴅᴏɪɴɢ ᴡᴇʟʟ...</i>")
+        m=await message.reply_text("<i>ᴡᴇʟᴄᴏᴍᴇ ᴛᴏ <b>KR Movie Search Bot</b>.\nʜᴏᴘᴇ ʏᴏᴜ'ʀᴇ ᴅᴏɪɴɢ ᴡᴇʟʟ...</i>")
         await asyncio.sleep(0.4)
         await m.edit_text("⏳")
         await asyncio.sleep(0.5)
@@ -272,7 +272,7 @@ async def start(client, message):
                     reply_markup=InlineKeyboardMarkup(
                         [
                             [
-                                InlineKeyboardButton('🚀 ꜰᴀꜱᴛ ᴅᴏᴡɴʟᴏᴀᴅ / ᴡᴀᴛᴄʜ ᴏɴʟɪɴᴇ 🖥️', callback_data=f'generate_stream_link:{file_id}'),
+                                InlineKeyboardButton('', callback_data=f'generate_stream_link:{file_id}'),
                             ],
                             [
                                 InlineKeyboardButton('📌 ᴊᴏɪɴ ᴜᴘᴅᴀᴛᴇꜱ ᴄʜᴀɴɴᴇʟ 📌', url=f'https://t.me/shbackup') #Don't change anything without contacting me @LazyDeveloperr
@@ -291,7 +291,7 @@ async def start(client, message):
                     reply_markup=InlineKeyboardMarkup(
                         [
                             [
-                                InlineKeyboardButton('🚀 ꜰᴀꜱᴛ ᴅᴏᴡɴʟᴏᴀᴅ / ᴡᴀᴛᴄʜ ᴏɴʟɪɴᴇ 🖥️', callback_data=f'generate_stream_link:{file_id}'),
+                                InlineKeyboardButton('', callback_data=f'generate_stream_link:{file_id}'),
                             ],
                             [
                                 InlineKeyboardButton('📌 ᴊᴏɪɴ ᴜᴘᴅᴀᴛᴇꜱ ᴄʜᴀɴɴᴇʟ 📌', url=f'https://t.me/shbackup') #Don't change anything without contacting me @LazyDeveloperr
@@ -498,7 +498,7 @@ async def start(client, message):
                 reply_markup=InlineKeyboardMarkup(
             [
              [
-              InlineKeyboardButton('🚀 ꜰᴀꜱᴛ ᴅᴏᴡɴʟᴏᴀᴅ / ᴡᴀᴛᴄʜ ᴏɴʟɪɴᴇ 🖥️', callback_data=f'generate_stream_link:{file_id}'),
+              InlineKeyboardButton('', callback_data=f'generate_stream_link:{file_id}'),
              ],
              [
               InlineKeyboardButton('📌 ᴊᴏɪɴ ᴜᴘᴅᴀᴛᴇꜱ ᴄʜᴀɴɴᴇʟ 📌', url=f'https://t.me/shbackup') #Don't change anything without contacting me @LazyDeveloperr
@@ -580,7 +580,7 @@ async def start(client, message):
                 reply_markup=InlineKeyboardMarkup(
             [
              [
-              InlineKeyboardButton('🚀 ꜰᴀꜱᴛ ᴅᴏᴡɴʟᴏᴀᴅ / ᴡᴀᴛᴄʜ ᴏɴʟɪɴᴇ 🖥️', callback_data=f'generate_stream_link:{file_id}'),
+              InlineKeyboardButton('', callback_data=f'generate_stream_link:{file_id}'),
              ],
              [
               InlineKeyboardButton('📌 ᴊᴏɪɴ ᴜᴘᴅᴀᴛᴇꜱ ᴄʜᴀɴɴᴇʟ 📌', url=f'https://t.me/shbackup') #Don't change anything without contacting me @LazyDeveloperr
@@ -647,7 +647,7 @@ async def start(client, message):
         reply_markup=InlineKeyboardMarkup(
             [
              [
-              InlineKeyboardButton('🚀 ꜰᴀꜱᴛ ᴅᴏᴡɴʟᴏᴀᴅ / ᴡᴀᴛᴄʜ ᴏɴʟɪɴᴇ 🖥️', callback_data=f'generate_stream_link:{file_id}'),
+              InlineKeyboardButton('', callback_data=f'generate_stream_link:{file_id}'),
              ],
              [
               InlineKeyboardButton('📌 ᴊᴏɪɴ ᴜᴘᴅᴀᴛᴇꜱ ᴄʜᴀɴɴᴇʟ 📌', url=f'https://t.me/shbackup') #Don't change anything without contacting me https://t.me/Sorry_Sorry_Galti_Ho_Gai
