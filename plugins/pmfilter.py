@@ -2445,7 +2445,7 @@ async def auto_filter(client, msg, spoll=False):
         ]
         btn.insert(0, 
             [
-                InlineKeyboardButton(", 'reqinfo')
+                InlineKeyboardButton("", 'reqinfo')
             ]
         )
         btn.insert(0, 
