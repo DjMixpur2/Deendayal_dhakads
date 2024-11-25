@@ -1,7 +1,7 @@
 class script(object):
-    START_TXT = """<b>ʜᴇʏ {}, {}\n\n𝒊 𝑨𝒎 𝑻𝒉𝒆 𝑴𝒐𝒔𝒕 𝑷𝒐𝒘𝒆𝒓𝒇𝒖𝒍 𝑨𝒖𝒕𝒐 𝑭𝒊𝒍𝒕𝒆𝒓 𝑩𝒐𝒕 𝑾𝒊𝒕𝒉 𝑷𝒓𝒆𝒎𝒊𝒖𝒎 𝑭𝒆𝒂𝒕𝒖𝒓𝒆.</b>"""
+    START_TXT = """<b>Hey {},/n/nI Am A Movie Search Bot,Just Send Your Movie Name Here👇\n\n<blockquote>Maintenance By 👉 @TG_KDBhai</blockquote></b>"""
 
-    GSTART_TXT = """<b>ʜᴇʏ {},\n\n𝒊 𝑨𝒎 𝑻𝒉𝒆 𝑴𝒐𝒔𝒕 𝑷𝒐𝒘𝒆𝒓𝒇𝒖𝒍 𝑨𝒖𝒕𝒐 𝑭𝒊𝒍𝒕𝒆𝒓 𝑩𝒐𝒕 𝑾𝒊𝒕𝒉 𝑷𝒓𝒆𝒎𝒊𝒖𝒎 𝑭𝒆𝒂𝒕𝒖𝒓𝒆.</b>"""
+    GSTART_TXT = """<b>Hey {},/n/nI Am A Movie Search Bot,Just Send Your Movie Name Here👇\n\n<blockquote>Maintenance By 👉 @TG_KDBhai</blockquote></b>"""
     
     HELP_TXT = """<b>ʜᴇʏ {},
     
