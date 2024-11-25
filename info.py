@@ -63,14 +63,14 @@ HOW_TO_VERIFY = environ.get('HOW_TO_VERIFY', 'https://t.me/SHBackup/11') # How t
 IS_SHORTLINK = bool(environ.get('IS_SHORTLINK', True))
 SHORTLINK_URL = environ.get('SHORTLINK_URL', 'urlstox.com')
 SHORTLINK_API = environ.get('SHORTLINK_API', '5bac6cb8fa7801f13d873564a08afbd9a486c09c')
-TUTORIAL = environ.get('TUTORIAL', 'https://t.me/SHBackup/11') # Tutorial video link for opening shortlink website 
+TUTORIAL = environ.get('TUTORIAL', 'https://t.me/krbackup/7') # Tutorial video link for opening shortlink website 
 IS_TUTORIAL = bool(environ.get('IS_TUTORIAL', False))
 
 #Channel & Group link 
-GRP_LNK = environ.get('GRP_LNK', 'https://t.me/shmoviegroup')
-CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/shbackup')
-OWNER_LNK = environ.get('OWNER_LNK', 'https://t.me/sh_kdbhai')
-DEENDAYAL_MOVIE_UPDATE_CHANNEL_LNK = environ.get('DEENDAYAL_MOVIE_UPDATE_CHANNEL_LNK', 'https://t.me/shmoviegroup')
+GRP_LNK = environ.get('GRP_LNK', 'https://t.me/kdmovierequest')
+CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/krbackup')
+OWNER_LNK = environ.get('OWNER_LNK', 'https://t.me/tg_kdbhai')
+DEENDAYAL_MOVIE_UPDATE_CHANNEL_LNK = environ.get('DEENDAYAL_MOVIE_UPDATE_CHANNEL_LNK', 'https://t.me/kdmovierequest')
 
 auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '').split()]
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
@@ -99,7 +99,7 @@ LONG_IMDB_DESCRIPTION = is_enabled(environ.get("LONG_IMDB_DESCRIPTION", "False")
 SPELL_CHECK_REPLY = is_enabled(environ.get("SPELL_CHECK_REPLY", "True"), True)
 MAX_LIST_ELM = environ.get("MAX_LIST_ELM", None)
 INDEX_REQ_CHANNEL = int(environ.get('INDEX_REQ_CHANNEL', LOG_CHANNEL))
-FILE_STORE_CHANNEL = [int(ch) for ch in (environ.get('FILE_STORE_CHANNEL', '')).split()]
+FILE_STORE_CHANNEL = [int(ch) for ch in (environ.get('FILE_STORE_CHANNEL', '-1002082842572')).split()]
 MELCOW_NEW_USERS = is_enabled((environ.get('MELCOW_NEW_USERS', "False")), False)
 PROTECT_CONTENT = is_enabled((environ.get('PROTECT_CONTENT', "False")), True)
 PUBLIC_FILE_STORE = is_enabled((environ.get('PUBLIC_FILE_STORE', "True")), True)
